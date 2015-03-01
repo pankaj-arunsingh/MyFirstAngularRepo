@@ -1,5 +1,3 @@
-
-
 (function(){
 
 angular.module('eventModule', [])
@@ -46,7 +44,7 @@ angular.module('eventModule', [])
 		}
 	]
 
-	this.index = 0;
+	this.index = 5;
 	this.eventIndex = 0;
 
 	this.setIndex=function(val)
