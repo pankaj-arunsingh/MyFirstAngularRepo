@@ -10,7 +10,7 @@ angular.module('eventModule', [])
 	console.log("Event Module::running");
 }])
 .controller('EventCtrl', ['$scope', function ($scope) {
-	$scope.title = "Young Game Maker";
+	$scope.title = "Young Developers";
 	$scope.menu=[
 		{
 			name:"Events",
@@ -36,10 +36,10 @@ angular.module('eventModule', [])
 	
 }])
 .controller('EventItemCtrl', ['$scope', function ($scope) {
-	$scope.itemTitle="Young Game Makers in NYC";
-	$scope.description="Young Game Makers is a one day event that teaches kids how to code";
+	$scope.itemTitle="Young Developers in NYC";
+	$scope.description="Young Developers is a one day event that teaches kids how to code";
 	$scope.imgSrc ="assets/img/newyork_large.jpg";
-	$scope.date ="January 24, 2015";
+	$scope.date ="March 24, 2015";
 
 	
 }])
