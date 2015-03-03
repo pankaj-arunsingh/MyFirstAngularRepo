@@ -10,7 +10,7 @@ angular.module('eventModule', [])
 	console.log("Event Module::running");
 }])
 .controller('EventCtrl', ['$scope', function ($scope) {
-	$scope.title = "Young Game Maker";
+	$scope.title = "Young Developers";
 
 	$scope.menu=[
 		{
