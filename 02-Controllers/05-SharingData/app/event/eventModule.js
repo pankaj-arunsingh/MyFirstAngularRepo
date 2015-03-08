@@ -7,7 +7,7 @@ angular.module('eventModule', [])
 	
 
 	return {
-		title:"Young Game Maker"
+		title:"Young AngularJS Developers"
 	};
 }])
 .config([function () {
@@ -43,10 +43,10 @@ angular.module('eventModule', [])
 	
 }])
 .controller('EventItemCtrl', ['$scope','MainTitle',  function ($scope,mainTitle) {
-	$scope.itemTitle=mainTitle.title+" in NYC";
+	$scope.itemTitle=mainTitle.title+" in San Francisco";
 	$scope.description=mainTitle.title+" is a one day event that teaches kids how to code";
-	$scope.imgSrc ="assets/img/newyork_large.jpg";
-	$scope.date ="January 24, 2015";
+	$scope.imgSrc ="assets/img/sanfran_big.jpg";
+	$scope.date ="April 4, 2015";
 }])
 .controller('EventTabCtrl', ['$scope', function ($scope) {
 	$scope.tab = 0;
