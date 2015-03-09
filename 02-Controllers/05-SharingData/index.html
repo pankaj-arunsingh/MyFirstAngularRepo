@@ -45,6 +45,7 @@
                     </li>
 
                     <li><a href="#"> {{title}}</a></li>
+					<li><a href="#" ng-click="click()"> {{message3}}</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -53,20 +54,25 @@
     </nav>
 
     <!-- Page Content -->
-    <div class="container">
+    <div class="container" ng-controller="EventItemCtrl">
 
         <!-- Portfolio Item Heading -->
         <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">San Francisco
                     <small>April 4th, 2015</small>
+					
                 </h1>
+				<p><b>{{message}}</b></p>
+				<p><b>{{message2}}</b></p>
+				<button class="btn btn-primary" ng-click="clickFunction()">Click me to share data</button>
+				<button class="btn btn-success" >{{message3}}</button>
             </div>
         </div>
         <!-- /.row -->
 
         <!-- Portfolio Item Row -->
-        <div class="row" ng-controller="EventItemCtrl">
+        <div class="row" >
 
             <div class="col-md-8">
                 <img class="img-responsive" src="assets/img/sanfran_big.jpg" alt="">
@@ -75,6 +81,9 @@
             <div ng-controller="EventTabCtrl" class="col-md-4">
                 <h3>{{itemTitle}}</h3>
                 <p>{{description}}</p>
+				<p><b>{{message}}</b></p>
+				<p><b>{{message2}}</b></p>
+				<button class="btn btn-primary" ng-click="clickFunction()">Click me to share data</button>
                 <h3>Details</h3>
                
                 <ul class="nav nav-tabs">
