@@ -7,7 +7,7 @@ angular.module('eventModule', [])
 	
 
 	return {
-		title:"Young Game Maker"
+		title:"Young AngularJS Developers"
 	};
 }])
 .filter('searchCity', function() {
